@@ -29,9 +29,9 @@ def insertionSort(arr):
 
 arr = []
 # n = 0 # Tamaño del arreglo
-# n = 10
+#n = 10
 n = 50
-# n = 100
+#n = 100
 # n = 500
 # n = 1000
 # n = 2000

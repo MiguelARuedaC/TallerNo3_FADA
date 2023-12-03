@@ -69,13 +69,7 @@ moda_D = encontrar_moda(arreglo_aleatorioD)
 
 
 #Funcion para tomar el tiempo de culminación de ejecución
-print(timeit.timeit(lambda: encontrar_moda(arreglo_aleatorioA), number=10))
-print(timeit.timeit(lambda: encontrar_moda(arreglo_aleatorioB), number=10))
-print(timeit.timeit(lambda: encontrar_moda(arreglo_aleatorioC), number=10))
-print(timeit.timeit(lambda: encontrar_moda(arreglo_aleatorioD), number=10))
-
-
-
-
-# Mostrar el arreglo generado
-print("Arreglo Aleatorio de 5 Datos:", arreglo_aleatorioA)
+print(timeit.timeit(lambda: encontrar_moda(arreglo_aleatorioA), number=1000))
+print(timeit.timeit(lambda: encontrar_moda(arreglo_aleatorioB), number=1000))
+print(timeit.timeit(lambda: encontrar_moda(arreglo_aleatorioC), number=1000))
+print(timeit.timeit(lambda: encontrar_moda(arreglo_aleatorioD), number=1000))

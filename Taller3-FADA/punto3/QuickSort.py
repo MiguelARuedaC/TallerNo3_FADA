@@ -5,7 +5,9 @@ Miguel Angel Rueda Colonia - 2159896
 Leider Santiago Cortes Hernandez - 2159879
 QuickSort
 """
-
+import random
+import time
+import timeit
 def quicksort(arr):
     # Caso base: si el arreglo tiene 0 o 1 elementos, está ordenado
     if len(arr) <= 1:
@@ -21,8 +23,18 @@ def quicksort(arr):
     # Recursivamente ordenar los elementos menores y mayores
     return quicksort(menores) + [pivote] + quicksort(mayores)
 
-# Ejemplo de uso
-arreglo = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]
-arreglo_ordenado = quicksort(arreglo)
-print("Arreglo Original:", arreglo)
-print("Arreglo Ordenado:", arreglo_ordenado)
+#Generar arrays de tamaño n aleatorios.
+arr = []
+#n = 0 # Tamaño del arreglo
+# n = 10
+n = 50
+#n = 100
+#n = 500
+#n = 1000
+#n = 2000
+#n = 5000
+#n = 10000
+for i in range(n):  # Darle valores aleatorios al arreglo.
+    arr.append(random.randint(0, 100))
+#print(quicksort(arr))
+print(timeit.timeit(lambda: quicksort(arr), number=1000))
