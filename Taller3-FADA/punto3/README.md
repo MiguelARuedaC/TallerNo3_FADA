@@ -1,0 +1,1 @@
+Para realizar las pruebas con las distintas entradas de los algoritmos correspondientes, remover el signo numeral # del comentario y correr el programa. Esto, porque i.e. en el Stooge Sort nos crasheó con tamaño de entrada 10.000.
